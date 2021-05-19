@@ -3,8 +3,65 @@
 		<title>Riglog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+		<style>
+			* {font-family: 'Roboto', sans-serif;}
+			body {background-color: #f5f5f5;}
+			h1 {margin-top: 0px; margin-bottom: 10px; font-size: 48px; letter-spacing: 0.1em;}
+			hr {border: 0; border-top: 1px solid #f0f0f0; margin-top: 20px; margin-bottom: 20px;}
+			li {margin-bottom: 10px;}
+			a {color: tomato}
+			section {
+				padding: 40px 40px 10px 40px; 
+				margin: 20px auto; 
+				background-color: white;
+				border: 1px solid #f0f0f0;
+				max-width: 640px;
+			}
+		</style>
 	</head>
 	<body>
-    <h1>Riglog</h1>
+	<section>
+		<h1>Riglog</h1>
+		<hr>
+		GitHub: <a href="https://github.com/riglog" title="GitHub">https://github.com/riglog</a>
+		<hr>
+		<p>
+		<i>Evidence IT vybavení, primárně serverů, desktopů a do budoucna třeba i síťových prvků atd.</i>
+		</p>
+
+		<h2>Cíle projektu</h2>
+		<ul>
+		<li>Zjednodušení organizace IT infrastruktury. Kromě běžného seznamu zařízení, také evidence provedených prací, aktualizací, bezpečnostních problémů, restartů, evidence komponent a možná i monitoring.</li>
+		<li>Čistě má osobní snaha o zlepšení svých programátorských schopností, znalostí .NETu a vývoje webových, mobilních i desktopových aplikací na vlastním projektu, postaveném na zelené louce (učitě to bude běh na dlouhou trať).</li>
+		<li>Poznat sílu open source a pokusit se zapojit do projektu více lidí.</li>
+		</ul>
+
+		<h2>Struktura projektu (repozitáře)</h2>
+		<ul>
+			<li>
+				<a href="https://github.com/riglog/Riglog.Api">Api</a>: Rest API backend v .NET 5
+			</li>
+			<li>
+				<a href="https://github.com/riglog/Riglog.App">App</a>: Apolkace pro Android, iOS, možná Windows a do budoucna i MacOS (Xamarin Forms).
+			</li>
+			<li>
+				<a href="https://github.com/riglog/Riglog.Web">Web</a>: Webový frontend aplikace (Pravděpodobně <s>Blazor,</s> vue.js nebo něco podobného).
+			</li>
+			<li>
+				<a href="https://github.com/riglog/Riglog.Site">Site</a>: Tato jednoduchá statická informační stránka.
+			</li>
+		</ul>
+
+		<h2>Stav projektu</h2>
+		<ul>
+			<li>květen 2021 - příprava a zahájení prací na API</li>
+		</ul>
+
+		<p style="text-align: center; font-size: 10px; margin-top: 30px;">Autor: <a href="https://github.com/stulda">Michal Stulík</a></p>
+
+	</section>
+    
   </body>
 </html>
