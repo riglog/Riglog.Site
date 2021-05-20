@@ -7,13 +7,13 @@
 		<style>
 			* {font-family: sans-serif;}
 			body {background-color: #f5f5f5;}
-			h1 {margin-top: 0px; margin-bottom: 10px; font-size: 48px; letter-spacing: 0.1em;}
+			h1 {margin-top: 0px; margin-bottom: 10px;font-size: 48px; letter-spacing: 0.1em;}
 			h2 {font-weight: normal;}
 			hr {border: 0; border-top: 1px solid #f0f0f0; margin-top: 20px; margin-bottom: 20px;}
 			li {margin-bottom: 10px;}
 			a {color: tomato}
 			li, p, i {color: #5f5f5f; font-weight: lighter; line-height: 1.5em;}
-			main {
+			.container {
 				padding: 40px 40px 0px 40px; 
 				margin: 20px auto; 
 				background-color: white;
@@ -21,19 +21,19 @@
 				max-width: 800px;
 			}
 			@media screen and (max-width: 640px) {
-				section {
+				.container {
 					margin: auto;
 				}
 			  }
 			@media screen and (max-width: 400px) {
-				section {
+				.container {
 					padding: 20px 20px 10px 20px;
 				}
 			  }
 		</style>
 	</head>
 	<body>
-	<main>
+	<div class="container">
 		<h1>Riglog</h1>
 		<hr>
 		<p>GitHub: <a href="https://github.com/riglog" title="GitHub">https://github.com/riglog</a></p>
@@ -74,7 +74,7 @@
 			Autor: <a href="https://github.com/stulda">Michal Stulík</a>
 		</p>
 
-	</main>
+	</div>
     
   </body>
 </html>
