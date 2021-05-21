@@ -4,24 +4,28 @@
 		<title>Riglog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/png" href="favicon.png">
+		<meta name="color-scheme" content="dark light">
+		<link rel="icon" media="(prefers-color-scheme:dark)"  type="image/png" href="img/favicon-alt.png">
+		<link rel="icon" media="(prefers-color-scheme:light)" type="image/png" href="img/favicon.png">
+		<script src="js/favicon.js" type="application/javascript"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 		<style>
 			* { font-family: sans-serif; }
 			body { background-color: #f5f5f5; }
 			h1 {
+				color: black;
 				font-family: 'Montserrat', sans-serif;
 				margin-top: 0px; 
-				margin-bottom: 
-				10px;font-size: 40px; 
+				margin-bottom: 10px;
+				font-size: 40px; 
 				letter-spacing: 0.1em; 
 				text-align: center;
 			}
-			h2 { font-weight: normal; }
+			h2 { font-weight: normal; color: black;}
 			hr { border: 0; border-top: 1px solid #f0f0f0; margin-top: 20px; margin-bottom: 20px; }
 			li { margin-bottom: 10px; }
-			a { color: #ff8b24}
+			a { color: #ff8b24; text-decoration: none; }
 			li, p, i { color: #5f5f5f; font-weight: lighter; line-height: 1.5em; }
 			.logo {
 				text-align: center;
@@ -37,6 +41,14 @@
 				border: 1px solid #d0d0d0;
 				max-width: 800px;
 			}
+			.footer {
+				text-align: center;
+				font-size: 10px;
+				margin-top: 40px;
+				padding-top: 10px;
+				border-top: 1px solid #f0f0f0;
+			}
+
 			@media screen and (max-width: 640px) {
 				.container {
 					margin: auto;
@@ -48,23 +60,34 @@
 					padding: 20px 20px 00px 20px;
 				}
 			}
-			.footer {
-				text-align: center;
-				font-size: 10px;
-				margin-top: 40px;
-				padding-top: 10px;
-				border-top: 1px solid #f0f0f0;
-			}
+			@media (prefers-color-scheme: dark) {
+				body { background-color: #1b1b1b; }
+				h1, h2 { color: white; }
+				hr, .footer{ border-color: #3b3b3b}
+				li, p, i { color: #a9b7c6; }
+				.container { 
+					background-color: #2b2b2b;
+					border-color: #4b4b4b;
+				}
+
+			  }
+			
 		</style>
 	</head>
 	<body>
 	<div class="container">
-		<div class="logo"><img src="logo.png" alt="Riglog"></div>
+		<div class="logo">
+			<picture>
+				<source srcset="img/logo.png" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
+				<source srcset="img/logo-alt.png" media="(prefers-color-scheme: dark)">
+				<img src="img/logo.png" alt="RIGLOG" />
+			</picture>
+		</div>
 		<h1>RIGLOG</h1>
 		<hr>
 		<p style="text-align: center;">GitHub: <a href="https://github.com/riglog" title="GitHub">https://github.com/riglog</a></p>
 		<hr>
-		<p style="text-align: center;">
+		<p style="text-align: center;padding-top: 10px; padding-bottom: 20px;">
 		<i>Evidence IT vybavení, primárně serverů, desktopů a do budoucna třeba i síťových prvků atd.</i>
 		</p>
 
@@ -102,5 +125,8 @@
 
 	</div>
     
+	
+
+
   </body>
 </html>
